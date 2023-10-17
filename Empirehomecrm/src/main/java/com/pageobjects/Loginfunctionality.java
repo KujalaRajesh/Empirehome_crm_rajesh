@@ -24,11 +24,16 @@ public class Loginfunctionality extends Basetest {
    }
    
    
-   public void verifylogin() {
+   public void verifylogin(String username, String password) throws InterruptedException {
 	   
-	  userid.sendKeys(prop.getProperty("username")); 
-	   pass.sendKeys(prop.getProperty("password"));
+	  userid.sendKeys(username); 
+	  Thread.sleep(2000);
+	  
+	   pass.sendKeys(password);
+	   Thread.sleep(2000);
+	   
 	   loginbutton.click();
+	   Thread.sleep(2000);
    }
    
 	
