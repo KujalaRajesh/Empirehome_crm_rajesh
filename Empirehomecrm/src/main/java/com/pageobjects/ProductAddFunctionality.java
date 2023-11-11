@@ -65,7 +65,7 @@ public class ProductAddFunctionality extends Basetest {
 		Thread.sleep(2000);
 		SideBar.click();
 		
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		InventoryButton.click();
 		
 		Thread.sleep(2000);
