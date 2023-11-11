@@ -1,66 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="1" failed="5" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-10-17T15:53:33 IST" name="Default suite" finished-at="2023-10-17T15:54:33 IST" duration-ms="59617">
+  <suite started-at="2023-11-11T20:52:00 IST" name="Default suite" finished-at="2023-11-11T20:52:17 IST" duration-ms="16903">
     <groups>
     </groups>
-    <test started-at="2023-10-17T15:53:33 IST" name="Default test" finished-at="2023-10-17T15:54:33 IST" duration-ms="59617">
-      <class name="com.testcases.Logintest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.testcases.Logintest@55182842]" started-at="2023-10-17T15:53:34 IST" name="setup" finished-at="2023-10-17T15:53:38 IST" duration-ms="3916" status="PASS">
+    <test started-at="2023-11-11T20:52:00 IST" name="Default test" finished-at="2023-11-11T20:52:17 IST" duration-ms="16903">
+      <class name="com.testcases.ProductAddTestCases">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.testcases.ProductAddTestCases@145f66e3]" started-at="2023-11-11T20:52:00 IST" name="setup" finished-at="2023-11-11T20:52:06 IST" duration-ms="5133" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="loginvalidation(java.lang.String,java.lang.String)[pri:0, instance:com.testcases.Logintest@55182842]" started-at="2023-10-17T15:53:38 IST" name="loginvalidation" data-provider="DataLoad" finished-at="2023-10-17T15:53:45 IST" duration-ms="7254" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[sureshbabuemp@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[ZPMHQHIA]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginvalidation -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.testcases.Logintest@55182842]" started-at="2023-10-17T15:53:45 IST" name="teardown" finished-at="2023-10-17T15:53:45 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.testcases.Logintest@55182842]" started-at="2023-10-17T15:53:45 IST" name="setup" finished-at="2023-10-17T15:53:48 IST" duration-ms="2133" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="loginvalidation(java.lang.String,java.lang.String)[pri:0, instance:com.testcases.Logintest@55182842]" started-at="2023-10-17T15:53:48 IST" name="loginvalidation" data-provider="DataLoad" finished-at="2023-10-17T15:53:54 IST" duration-ms="6538" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[sureshbabuemp]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[ZPMHQHIA]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="ProductAddValidation()[pri:0, instance:com.testcases.ProductAddTestCases@145f66e3]" started-at="2023-11-11T20:52:06 IST" name="ProductAddValidation" finished-at="2023-11-11T20:52:17 IST" duration-ms="11688" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[expected [http://empirehome.myprojectsonline.co.in/EmpireHome/Dashboard] but found [http://empirehome.myprojectsonline.co.in/Authenticate/Login]]]>
+              <![CDATA[expected [http://empirehome.myprojectsonline.co.in/Inventory/All] but found [http://empirehome.myprojectsonline.co.in/Inventory/InventoryData]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [http://empirehome.myprojectsonline.co.in/EmpireHome/Dashboard] but found [http://empirehome.myprojectsonline.co.in/Authenticate/Login]
+              <![CDATA[java.lang.AssertionError: expected [http://empirehome.myprojectsonline.co.in/Inventory/All] but found [http://empirehome.myprojectsonline.co.in/Inventory/InventoryData]
 at org.testng.Assert.fail(Assert.java:111)
 at org.testng.Assert.failNotEquals(Assert.java:1578)
 at org.testng.Assert.assertEqualsImpl(Assert.java:150)
 at org.testng.Assert.assertEquals(Assert.java:132)
 at org.testng.Assert.assertEquals(Assert.java:656)
 at org.testng.Assert.assertEquals(Assert.java:666)
-at com.testcases.Logintest.loginvalidation(Logintest.java:40)
+at com.testcases.ProductAddTestCases.ProductAddValidation(ProductAddTestCases.java:30)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -92,276 +56,8 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginvalidation -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.testcases.Logintest@55182842]" started-at="2023-10-17T15:53:54 IST" name="teardown" finished-at="2023-10-17T15:53:54 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.testcases.Logintest@55182842]" started-at="2023-10-17T15:53:54 IST" name="setup" finished-at="2023-10-17T15:53:56 IST" duration-ms="2274" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="loginvalidation(java.lang.String,java.lang.String)[pri:0, instance:com.testcases.Logintest@55182842]" started-at="2023-10-17T15:53:56 IST" name="loginvalidation" data-provider="DataLoad" finished-at="2023-10-17T15:54:03 IST" duration-ms="6387" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[sureshbabuemp@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [http://empirehome.myprojectsonline.co.in/EmpireHome/Dashboard] but found [http://empirehome.myprojectsonline.co.in/]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [http://empirehome.myprojectsonline.co.in/EmpireHome/Dashboard] but found [http://empirehome.myprojectsonline.co.in/]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:656)
-at org.testng.Assert.assertEquals(Assert.java:666)
-at com.testcases.Logintest.loginvalidation(Logintest.java:40)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginvalidation -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.testcases.Logintest@55182842]" started-at="2023-10-17T15:54:03 IST" name="teardown" finished-at="2023-10-17T15:54:03 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.testcases.Logintest@55182842]" started-at="2023-10-17T15:54:03 IST" name="setup" finished-at="2023-10-17T15:54:07 IST" duration-ms="4131" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="loginvalidation(java.lang.String,java.lang.String)[pri:0, instance:com.testcases.Logintest@55182842]" started-at="2023-10-17T15:54:07 IST" name="loginvalidation" data-provider="DataLoad" finished-at="2023-10-17T15:54:13 IST" duration-ms="6505" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[ZPMHQHIA]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [http://empirehome.myprojectsonline.co.in/EmpireHome/Dashboard] but found [http://empirehome.myprojectsonline.co.in/]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [http://empirehome.myprojectsonline.co.in/EmpireHome/Dashboard] but found [http://empirehome.myprojectsonline.co.in/]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:656)
-at org.testng.Assert.assertEquals(Assert.java:666)
-at com.testcases.Logintest.loginvalidation(Logintest.java:40)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginvalidation -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.testcases.Logintest@55182842]" started-at="2023-10-17T15:54:13 IST" name="teardown" finished-at="2023-10-17T15:54:13 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.testcases.Logintest@55182842]" started-at="2023-10-17T15:54:13 IST" name="setup" finished-at="2023-10-17T15:54:17 IST" duration-ms="3672" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="loginvalidation(java.lang.String,java.lang.String)[pri:0, instance:com.testcases.Logintest@55182842]" started-at="2023-10-17T15:54:17 IST" name="loginvalidation" data-provider="DataLoad" finished-at="2023-10-17T15:54:24 IST" duration-ms="6679" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[sureshbabuemp@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[1234567]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [http://empirehome.myprojectsonline.co.in/EmpireHome/Dashboard] but found [http://empirehome.myprojectsonline.co.in/Authenticate/Login]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [http://empirehome.myprojectsonline.co.in/EmpireHome/Dashboard] but found [http://empirehome.myprojectsonline.co.in/Authenticate/Login]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:656)
-at org.testng.Assert.assertEquals(Assert.java:666)
-at com.testcases.Logintest.loginvalidation(Logintest.java:40)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginvalidation -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.testcases.Logintest@55182842]" started-at="2023-10-17T15:54:24 IST" name="teardown" finished-at="2023-10-17T15:54:24 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.testcases.Logintest@55182842]" started-at="2023-10-17T15:54:24 IST" name="setup" finished-at="2023-10-17T15:54:26 IST" duration-ms="2284" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="loginvalidation(java.lang.String,java.lang.String)[pri:0, instance:com.testcases.Logintest@55182842]" started-at="2023-10-17T15:54:26 IST" name="loginvalidation" data-provider="DataLoad" finished-at="2023-10-17T15:54:33 IST" duration-ms="6489" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[12345]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[ZPMHQHIA]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [http://empirehome.myprojectsonline.co.in/EmpireHome/Dashboard] but found [http://empirehome.myprojectsonline.co.in/Authenticate/Login]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [http://empirehome.myprojectsonline.co.in/EmpireHome/Dashboard] but found [http://empirehome.myprojectsonline.co.in/Authenticate/Login]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:656)
-at org.testng.Assert.assertEquals(Assert.java:666)
-at com.testcases.Logintest.loginvalidation(Logintest.java:40)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginvalidation -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.testcases.Logintest@55182842]" started-at="2023-10-17T15:54:33 IST" name="teardown" finished-at="2023-10-17T15:54:33 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- com.testcases.Logintest -->
+        </test-method> <!-- ProductAddValidation -->
+      </class> <!-- com.testcases.ProductAddTestCases -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
