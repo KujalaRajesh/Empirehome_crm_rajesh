@@ -1,24 +1,22 @@
 package com.utils;
 import java.io.File;
 import java.io.FileInputStream;
-import java.sql.Driver;
 
 import org.apache.poi.ss.usermodel.DataFormatter;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-import org.testng.annotations.DataProvider;
+import org.*;
 
 public class Utils {
+	static WebDriver driver;
 	
 	public static String[][] Customerdata(String sheetname) throws Throwable {
-		File file = new File("./src/main/java/com/testdata/EhUsernames.xlsx");
+		File file = new File("C:\\Users\\Admin\\git\\EmpireHome_Crm\\Empirehomecrm\\src\\main\\java\\com\\testdata\\EhUsernames.xlsx");
 		FileInputStream stream = new FileInputStream(file);
-		XSSFWorkbook workbook = new XSSFWorkbook(stream)
-;
+		XSSFWorkbook workbook = new XSSFWorkbook(stream);
 		XSSFSheet sheet = workbook.getSheet(sheetname);
 		int rows = sheet.getPhysicalNumberOfRows();
 		int cells = sheet.getRow(1).getLastCellNum();
@@ -38,12 +36,9 @@ public class Utils {
 public static void actions(WebDriver driver, WebElement element) {
 	Actions ac = new Actions(driver);
 	ac.moveToElement(element).click().perform();
-}
-//public static void scroll(driver) {
-//	JavascriptExecutor js = (JavascriptExecutor) driver;
-//	js.executeScript("window.scrollBy(0,250)");
-//	
-//}
-	
+	}
+
+
 
 }
+
