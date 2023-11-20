@@ -8,6 +8,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.Select;
 import org.*;
 
 public class Utils {
@@ -37,6 +38,10 @@ public static void actions(WebDriver driver, WebElement element) {
 	Actions ac = new Actions(driver);
 	ac.moveToElement(element).click().perform();
 	}
+public static void dropdowns(WebElement value, int index) {
+	Select sc = new Select(value);
+	sc.selectByIndex(index);
+}
 
 
 
