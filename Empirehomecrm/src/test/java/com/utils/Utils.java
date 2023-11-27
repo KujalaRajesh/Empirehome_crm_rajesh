@@ -17,8 +17,7 @@ public class Utils {
 	public static String[][] Customerdata(String sheetname) throws Throwable {
 		File file = new File("./src/main/java/com/testdata/EhUsernames.xlsx");
 		FileInputStream stream = new FileInputStream(file);
-		XSSFWorkbook workbook = new XSSFWorkbook(stream)
-;
+		XSSFWorkbook workbook = new XSSFWorkbook(stream);
 		XSSFSheet sheet = workbook.getSheet(sheetname);
 		int rows = sheet.getPhysicalNumberOfRows();
 		int cells = sheet.getRow(1).getLastCellNum();
