@@ -38,9 +38,9 @@ public static void actions(WebDriver driver, WebElement element) {
 	Actions ac = new Actions(driver);
 	ac.moveToElement(element).click().perform();
 	}
-public static void dropdowns(WebElement value, int index) {
+public static void dropdowns(WebElement value, String text) {
 	Select sc = new Select(value);
-	sc.selectByIndex(index);
+	sc.selectByVisibleText(text);
 }
 
 
