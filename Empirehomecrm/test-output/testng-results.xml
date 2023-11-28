@@ -2,32 +2,28 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-11-27T13:20:47 IST" name="Default suite" finished-at="2023-11-27T13:21:39 IST" duration-ms="51861">
+  <suite started-at="2023-11-28T08:46:28 IST" name="Default suite" finished-at="2023-11-28T08:47:44 IST" duration-ms="76214">
     <groups>
     </groups>
-    <test started-at="2023-11-27T13:20:47 IST" name="Default test" finished-at="2023-11-27T13:21:39 IST" duration-ms="51861">
-      <class name="com.testcases.EmployeeRegistrationTestCase">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.testcases.EmployeeRegistrationTestCase@55a147cc]" started-at="2023-11-27T13:20:47 IST" name="setup" finished-at="2023-11-27T13:21:19 IST" duration-ms="31774" status="PASS">
+    <test started-at="2023-11-28T08:46:28 IST" name="Default test" finished-at="2023-11-28T08:47:44 IST" duration-ms="76214">
+      <class name="com.testcases.CategoriesTestCases">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.testcases.CategoriesTestCases@71ba6d4e]" started-at="2023-11-28T08:46:28 IST" name="setup" finished-at="2023-11-28T08:46:51 IST" duration-ms="23312" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="EmployeeRegistrationvalidation()[pri:0, instance:com.testcases.EmployeeRegistrationTestCase@55a147cc]" started-at="2023-11-27T13:21:19 IST" name="EmployeeRegistrationvalidation" finished-at="2023-11-27T13:21:39 IST" duration-ms="19895" status="FAIL">
-          <exception class="org.openqa.selenium.support.ui.UnexpectedTagNameException">
+        <test-method signature="CategoriesValidation()[pri:0, instance:com.testcases.CategoriesTestCases@71ba6d4e]" started-at="2023-11-28T08:46:51 IST" name="CategoriesValidation" finished-at="2023-11-28T08:47:44 IST" duration-ms="52796" status="FAIL">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Element should have been "select" but was "input"
-Build info: version: '4.11.0', revision: '040bc5406b'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
-Driver info: driver.version: unknown]]>
+              <![CDATA[expected [No matching records found] but found [[[ChromeDriver: chrome on windows (b065601808acaac2cbe60601be89bcc7)] -> xpath: //td[@class='dataTables_empty']]]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.support.ui.UnexpectedTagNameException: Element should have been "select" but was "input"
-Build info: version: '4.11.0', revision: '040bc5406b'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
-Driver info: driver.version: unknown
-at org.openqa.selenium.support.ui.Select.<init>(Select.java:46)
-at com.utils.Utils.dropdowns(Utils.java:42)
-at com.pageobjects.EmployeeRegistrationFunctionality.verifyemployeeregistration(EmployeeRegistrationFunctionality.java:68)
-at com.testcases.EmployeeRegistrationTestCase.EmployeeRegistrationvalidation(EmployeeRegistrationTestCase.java:32)
+              <![CDATA[java.lang.AssertionError: expected [No matching records found] but found [[[ChromeDriver: chrome on windows (b065601808acaac2cbe60601be89bcc7)] -> xpath: //td[@class='dataTables_empty']]]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:644)
+at com.testcases.CategoriesTestCases.CategoriesValidation(CategoriesTestCases.java:34)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -58,11 +54,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.support.ui.UnexpectedTagNameException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- EmployeeRegistrationvalidation -->
-      </class> <!-- com.testcases.EmployeeRegistrationTestCase -->
+        </test-method> <!-- CategoriesValidation -->
+      </class> <!-- com.testcases.CategoriesTestCases -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

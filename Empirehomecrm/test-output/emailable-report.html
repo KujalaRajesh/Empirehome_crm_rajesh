@@ -9,18 +9,17 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">51,861</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">76,214</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.testcases.EmployeeRegistrationTestCase</td><td><a href="#m0">EmployeeRegistrationvalidation</a></td><td rowspan="1">1701071479251</td><td rowspan="1">19895</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.testcases.CategoriesTestCases</td><td><a href="#m0">CategoriesValidation</a></td><td rowspan="1">1701141411811</td><td rowspan="1">52796</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">com.testcases.EmployeeRegistrationTestCase#EmployeeRegistrationvalidation</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.support.ui.UnexpectedTagNameException: Element should have been &quot;select&quot; but was &quot;input&quot;
-Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
-Driver info: driver.version: unknown
-	at org.openqa.selenium.support.ui.Select.&lt;init&gt;(Select.java:46)
-	at com.utils.Utils.dropdowns(Utils.java:42)
-	at com.pageobjects.EmployeeRegistrationFunctionality.verifyemployeeregistration(EmployeeRegistrationFunctionality.java:68)
-	at com.testcases.EmployeeRegistrationTestCase.EmployeeRegistrationvalidation(EmployeeRegistrationTestCase.java:32)
+<h2>Default test</h2><h3 id="m0">com.testcases.CategoriesTestCases#CategoriesValidation</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [No matching records found] but found [[[ChromeDriver: chrome on windows (b065601808acaac2cbe60601be89bcc7)] -&gt; xpath: //td[@class=&apos;dataTables_empty&apos;]]]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:644)
+	at com.testcases.CategoriesTestCases.CategoriesValidation(CategoriesTestCases.java:34)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
