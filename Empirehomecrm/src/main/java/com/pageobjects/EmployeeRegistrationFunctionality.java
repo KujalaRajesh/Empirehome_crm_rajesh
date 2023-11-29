@@ -65,7 +65,7 @@ public class EmployeeRegistrationFunctionality extends Basetest  {
 		EmployeeDesignation.click();
 		
 		Thread.sleep(2000);
-		Utils.dropdowns(DesignationDropdown, 3);
+		Utils.dropdowns(DesignationDropdown, "Apple");
 		
 		
 		Thread.sleep(2000);
